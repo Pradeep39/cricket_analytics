@@ -31,7 +31,7 @@ def getMatchData(match_url):
     match_no=table.xpath("//div[div[@class='match-detail--left']//h4/text()='Match number']//a/text()")[0]
     innings1_team=table.xpath("//li[div/a/@href='#gp-inning-00']/div//h2/text()")
     innings2_team=table.xpath("//li[div/a/@href='#gp-inning-01']/div//h2/text()")
-    print(full_match_url)
+    #print(full_match_url)
     innings1_team=innings1_team[0] if len(innings1_team)>0 else ''
     innings2_team=innings2_team[0] if len(innings2_team)>0 else ''
     innings1_players_href=table.xpath("//li[div/a/@href='#gp-inning-00']//div[contains(@class,'batsmen')]//a[contains(@href,'http') and contains(@href,'player')]/@href")
